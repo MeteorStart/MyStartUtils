@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.lx.mystartapp.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_appstart_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/view_appstart_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"/>
+
+    <!-- 根据需求选择点击跳转还是滑动跳转可以不加按钮 -->
+    <Button
+        android:id="@+id/btn_appstart_skip"
+        android:layout_width="wrap_content"
+        android:text="点我跳转"
+        android:textSize="36sp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
